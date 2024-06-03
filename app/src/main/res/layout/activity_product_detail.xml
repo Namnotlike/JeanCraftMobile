@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ProductDetailActivity">
+
+    <!-- Image view for product image -->
+    <ImageView
+        android:id="@+id/imgProductDetail"
+        android:layout_width="match_parent"
+        android:layout_height="483dp"
+        android:contentDescription=""
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/txtId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgProductDetail"
+        android:padding="16dp"
+        android:text=""
+        android:visibility="gone"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    <!-- Product Name -->
+    <TextView
+        android:id="@+id/txtSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtId"
+        android:padding="16dp"
+        android:text=""
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Product Price -->
+    <TextView
+        android:id="@+id/txtPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtSize"
+        android:padding="16dp"
+        android:text=""
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPrice"
+        android:padding="16dp"
+        android:text=""
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <!-- Add to Cart Button -->
+    <Button
+        android:id="@+id/btnAddToCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtQuantity"
+        android:layout_margin="16dp"
+        android:background="@color/design_default_color_primary"
+        android:text="Add To Cart"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
