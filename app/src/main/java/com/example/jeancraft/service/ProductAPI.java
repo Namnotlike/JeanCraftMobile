@@ -101,11 +101,11 @@ public class ProductAPI {
                 for (int i = 0; i < dataArray.length(); i++) {
                     JSONObject data = (JSONObject) dataArray.get(i);
                     String productID = data.getString("productId");
-                    String image = data.getString("image");
+                    //String image = data.getString("image");
                     double price = data.getDouble("price");
                     double size = data.getDouble("size");
                     int quantity = data.optInt("quantity", 1);
-                    Product product = new Product(productID, image, price, size, quantity);
+                    Product product = new Product(productID, "image", price, size, quantity);
                     list.add(product);
                 }
                 return list;
@@ -125,11 +125,11 @@ public class ProductAPI {
             if (code.equals("01")) {
                 JSONObject data = jsonObject.getJSONObject("data");
                     String productID = data.getString("productId");
-                    String image = data.getString("image");
+                    //String image = data.getString("image");
                     double price = data.getDouble("price");
                     double size = data.getDouble("size");
                     int quantity = data.optInt("quantity", 1);
-                    Product product = new Product(productID, image, price, size, quantity);
+                    Product product = new Product(productID, "image", price, size, quantity);
                 return product;
             } else {
                 return null;
